@@ -7,3 +7,5 @@ dist
 txredisapi.egg-info
 .idea/
 atlassian-ide-plugin.xml
+*.deb
+*.rpm

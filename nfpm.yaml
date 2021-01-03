@@ -1,0 +1,21 @@
+name: "python3-txredisapi"
+arch: "amd64"
+platform: "linux"
+version: "v1.4.7"
+section: "default"
+priority: "extra"
+maintainer: "Jookies LTD <jasmin@jookies.net>"
+description: "SMPP 3.4 client built on Twisted / Python3"
+vendor: "Alexandre Fiori"
+homepage: "https://github.com/jookies/txredisapi"
+license: "Apache 2"
+replaces:
+  - python3-txredisapi
+provides:
+  - python3-txredisapi
+depends:
+  - python3 (>= 3.7)
+  - python3-pip
+scripts:
+  postinstall: ./misc/packaging/scripts/common-postinstall.sh
+  preremove: ./misc/packaging/scripts/common-preremove.sh
